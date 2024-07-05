@@ -5,4 +5,5 @@ set(CMAKE_CXX_STANDARD 20)
 
 include_directories(Z80/include)
 
-add_executable(${PROJECT_NAME} Z80/main.cpp)
+add_executable(${PROJECT_NAME} Z80/main.cpp
+		Z80/source/z80.cpp)

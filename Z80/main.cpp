@@ -2,7 +2,11 @@
 #include <iostream>
 
 int main() {
-	std::cout << "hello world!" << std::endl;
+	Z80_Emulator::Z80 tmp = Z80_Emulator::Z80();
+
+	tmp.a = 10;
+	tmp.f = 20;
+	std::cout << std::hex << tmp.af << std::endl;
 
 	return 0;
 }
